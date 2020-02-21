@@ -1,0 +1,90 @@
+// @media screen and (max-width: 768px) {
+//   body {
+//     background-color: lightgray;
+//   }
+// }
+
+.headerContainer {
+  width: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+.position-fixed {
+  position: fixed;
+  top: 0;
+  // background-color: #ffffff;
+}
+.logo {
+  margin-right: 1em;
+  height: 50px;
+}
+.name {
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.menuContainer {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.link:hover {
+  color: #55bdc3;
+}
+
+.color-white {
+  color: #ffffff;
+}
+
+.color-black {
+  color: #000000;
+}
+
+.background-black {
+  background-color: #000000;
+}
+
+// margin 
+.m-1 {
+  margin: 1em;
+}
+.m-2 {
+  margin: 2em;
+}
+.m-3 {
+  margin: 3em;
+}
+// padding
+.p-1 {
+  margin: 1em;
+}
+.p-2 {
+  margin: 2em;
+}
+.p-3 {
+  margin: 3em;
+}
+.p-4 {
+  margin: 4em;
+}
+.p-5 {
+  margin: 5em;
+}

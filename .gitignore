@@ -1,0 +1,5 @@
+/node_modules
+/pages/tes*
+.next
+package-lock.json
+yarn.lock

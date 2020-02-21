@@ -1,0 +1,27 @@
+{
+  "name": "personal-website-next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
+    "bootstrap": "^4.4.1",
+    "lodash": "^4.17.15",
+    "next": "^9.2.1",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "reactstrap": "^8.4.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "start": "next start",
+    "build": "next build"
+  },
+  "author": "",
+  "license": "ISC"
+}
