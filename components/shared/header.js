@@ -6,7 +6,7 @@ export default function Header(props) {
     const myFunction = () => {
       var header = document.getElementById('header');
       var sticky = header.offsetTop;
-      console.log({ yOffset: window.pageYOffset, sticky });
+      // console.log({ yOffset: window.pageYOffset, sticky });
       if (window.pageYOffset > 40) {
         header.classList.add('background-black');
       } else {
