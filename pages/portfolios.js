@@ -1,28 +1,65 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import get from 'lodash/get';
 
 import BaseLayout from '../components/layouts/BaseLayout';
+// https://images-na.ssl-images-amazon.com/images/I/71Z%2Bev2VuqL._AC_SL1295_.jpg
+const responsiveImage = require('../public/images/anhar.png?placeholder=true&sizes[]=100,sizes[]=200,sizes[]=300');
 
 export default function Portofolios(props) {
 
+  const [state, setstate] = useState(false)
+
+  useEffect(() => {
+    console.log('AAAAAAAA')
+  }, [])
+
+  useEffect(() => {
+    console.log('BBBB')
+  }, [state])
+
+
+
+  const handleButton = () => {
+    setstate(!state)
+  }
+
   return (
     <BaseLayout title="My Portfolios">
-      <div className="wrapper">
+      <div style={{ width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <button style={{padding: '1em', color: 'red'}} onClick={handleButton}>Press Btn</button>
+        {/* <div style={{ width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+          <div
+            style={{
+              height: responsiveImage.height,
+              width: responsiveImage.width,
+              width: '100vw', height: '100vh',
+              backgroundSize: 'cover',
+              backgroundImage: 'url("' + responsiveImage.placeholder + '")'
+            }}
+          >
+            <img src={responsiveImage.src} srcSet={responsiveImage.srcSet}/>
+          </div>
+        </div> */}
+      </div>
+      {/* <div className="wrapper">
         <div className="container">
           {props.movies.map(movie => {
+            // const responsiveImage = require('https://images-na.ssl-images-amazon.com/images/I/71Z%2Bev2VuqL._AC_SL1295_.jpg?sizes[]=100,sizes[]=200,sizes[]=300');
             return (
               <div
                 className="column"
                 key={movie.show.id}
-                style={{
-                  backgroundImage: `url(${get(
-                    movie,
-                    'show.image.medium',
-                    'https://via.placeholder.com/200'
-                  )})`,
-                  backgroundSize: 'cover'
-                }}
+                style={
+                  {
+                    // backgroundImage: `url(${get(
+                    //   movie,
+                    //   'show.image.medium',
+                    //   'https://via.placeholder.com/200'
+                    // )})`,
+                    // backgroundSize: 'cover'
+                  }
+                }
               >
                 <div className="back">
                   <div className="detail">
@@ -32,11 +69,19 @@ export default function Portofolios(props) {
                     </button>
                   </div>
                 </div>
+                <img
+                  src={get(
+                    movie,
+                    'show.image.original',
+                    'https://via.placeholder.com/200'
+                  )}
+                  alt="anime"
+                />
               </div>
             );
           })}
         </div>
-      </div>
+      </div> */}
 
       <style jsx>{`
         p {

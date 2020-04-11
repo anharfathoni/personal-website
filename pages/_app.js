@@ -10,7 +10,7 @@ export default function App(props) {
   return (
     <div>
       <Head>
-        <script src="https://kit.fontawesome.com/02199a3a80.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/02199a3a80.js" crossOrigin="anonymous"></script>
         <link
           href="https://fonts.googleapis.com/css?family=Raleway:400,600,800|Roboto|Yeon+Sung&display=swap"
           rel="stylesheet"

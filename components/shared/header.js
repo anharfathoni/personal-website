@@ -22,7 +22,8 @@ export default function Header(props) {
       <div className="name">
         <img
           className="logo"
-          src="/logo/A.png"
+          // src={require("http://static.tvmaze.com/uploads/images/original_untouched/188/472439.jpg")}
+          src={require('../../public/logo/A.png')}
           alt="profile"
           height="10%"
         ></img>
